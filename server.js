@@ -18,7 +18,7 @@ const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 
 const db = require("./db");
-const { optionalAuth, JWT_SECRET } = require("./middleware");
+const { optionalAuth, JWT_SECRET } = require("./auth-helpers");
 const { getSettingNumber } = require("./lib/store");
 const { escalateOverdue } = require("./lib/escalation");
 
